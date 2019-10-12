@@ -1,8 +1,8 @@
-package com.zhaoyiheng.test.com.zhaoyiheng.test;
+package com.zhaoyiheng.test.com;
 
 import org.junit.Test;
 
-import com.zhaoyiheng.utils.com.zhaoyiheng.utils.StringUtils;
+import com.zhaoyiheng.utils.StringUtils;
 
 
 public class TestString {

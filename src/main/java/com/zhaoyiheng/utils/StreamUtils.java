@@ -1,4 +1,4 @@
-package com.zhaoyiheng.utils.com.zhaoyiheng.utils;
+package com.zhaoyiheng.utils;
 
 import java.io.Closeable;
 import java.io.IOException;
