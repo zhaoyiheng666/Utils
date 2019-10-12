@@ -182,10 +182,7 @@ public class StringUtils {
 	}
 	
 	/**
-	 * (1)利用Html的<p>标签来保留文本的换行。
-(2)Windows系统换行符是“\r\n”,Linux系统是“\n”，因此要将\n\r替换成一个\n。
-(3)再将\n结尾的这行文本用<p></p>标签包起来。 张三\n李四      <p>张三</p><p>李四</p>
-(4)如果遇到单个\r字符要使用<br/>标签替换。
+	 *
 	 * @param src
 	 * @return
 	 */
