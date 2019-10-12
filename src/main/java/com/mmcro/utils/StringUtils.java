@@ -32,7 +32,7 @@ public class StringUtils {
 	
 	
 	public static void main(String[] args) {
-		String str = randomChar(10);
+		/*String str = randomChar(10);
 		System.out.println("10个随机的字符是 " + str);
 		
 		
@@ -52,6 +52,11 @@ public class StringUtils {
 		
 		System.out.println(" type2 is email  ? zhuzh@qq.com " + StringUtils.isEmail2("zhuzh@qq.com"));
 		System.out.println(" type2   email ? zhuzg@qq.c1n  " + StringUtils.isEmail2("zhuzg@qq.c1n") );
+		*/
+		
+		String str = "张三\r\n李四";
+		String dst = toHtml(str);
+		System.out.println("dst is " + dst);
 		
 		
 		
@@ -174,6 +179,26 @@ public class StringUtils {
 		Matcher m = p.matcher(mobile);
 		boolean isMatch = m.matches();
 		return isMatch;
+	}
+	
+	/**
+	 * (1)利用Html的<p>标签来保留文本的换行。
+(2)Windows系统换行符是“\r\n”,Linux系统是“\n”，因此要将\n\r替换成一个\n。
+(3)再将\n结尾的这行文本用<p></p>标签包起来。 张三\n李四      <p>张三</p><p>李四</p>
+(4)如果遇到单个\r字符要使用<br/>标签替换。
+	 * @param src
+	 * @return
+	 */
+	public static String toHtml(String src) {
+		//Windows系统换行符是“\r\n”,Linux系统是“\n”，因此要将\n\r替换成一个\n。
+		String dst = src.replaceAll("\r\n", "\n");
+		
+		//再将\n结尾的这行文本用<p></p>标签包起来。 张三\n李四      <p>张三</p><p>李四</p>
+		dst=dst.replaceAll("\n", "</p><p>");
+		dst="<p>" + dst + "</p>";
+		//如果遇到单个\r字符要使用<br/>标签替换。
+		dst=dst.replaceAll("\r", "<br/>");
+		return dst;
 	}
 	
 	
