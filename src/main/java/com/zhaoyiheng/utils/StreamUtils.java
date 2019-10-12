@@ -1,11 +1,11 @@
-package com.mmcro.utils;
+package com.zhaoyiheng.utils;
 
 import java.io.Closeable;
 import java.io.IOException;
 
 /**
  * 
- * @author zhuzg
+ * @author zyh
  *
  */
 public class StreamUtils {

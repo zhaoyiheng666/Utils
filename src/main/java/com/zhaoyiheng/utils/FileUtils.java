@@ -1,4 +1,4 @@
-package com.mmcro.utils;
+package com.zhaoyiheng.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * 文件 工具类
- * @author zhuzg
+ * @author zyh
  *
  */
 public class FileUtils {

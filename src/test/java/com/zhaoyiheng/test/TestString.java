@@ -1,4 +1,4 @@
-package com.zhuzhiguang.test;
+package com.zhaoyiheng.test;
 
 import org.junit.Test;
 

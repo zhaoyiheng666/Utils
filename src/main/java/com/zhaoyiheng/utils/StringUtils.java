@@ -1,4 +1,4 @@
-package com.mmcro.utils;
+package com.zhaoyiheng.utils;
 
 import java.util.Random;
 import java.util.regex.Matcher;
@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 /**
  * 
- * @author zhuzg
+ * @author zyh
  *
  */
 public class StringUtils {
