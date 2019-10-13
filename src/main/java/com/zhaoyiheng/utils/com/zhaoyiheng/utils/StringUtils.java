@@ -1,4 +1,4 @@
-package com.zhaoyiheng.utils;
+package com.zhaoyiheng.utils.com.zhaoyiheng.utils;
 
 import java.util.Random;
 import java.util.regex.Matcher;
@@ -26,6 +26,42 @@ public class StringUtils {
 		}
 		
 	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		/*String str = randomChar(10);
+		System.out.println("10个随机的字符是 " + str);
+		
+		
+		String s = StringUtils.randomCharAndNumber(20);
+		System.out.println("s is " + s);
+		
+		System.out.println("扩展名是："  + StringUtils.getFileSuffix("朱志广-1706E-补课计划.xlsx"));
+		
+		System.out.println(" reg 234 " + StringUtils.isNumber("234") );
+
+		System.out.println(" reg 2a34 " + StringUtils.isNumber("2a34") );
+		System.out.println(" reg kong  " + StringUtils.isNumber("") );
+		
+		
+		System.out.println(" is email  ? zhuzh@qq.com " + StringUtils.isEmail("zhuzh@qq.com"));
+		System.out.println(" is email ? zhuzg@qq.c1n  " + StringUtils.isEmail("zhuzg@qq.c1n") );
+		
+		System.out.println(" type2 is email  ? zhuzh@qq.com " + StringUtils.isEmail2("zhuzh@qq.com"));
+		System.out.println(" type2   email ? zhuzg@qq.c1n  " + StringUtils.isEmail2("zhuzg@qq.c1n") );
+		*/
+		
+		String str = "张三\r\n李四";
+		String dst = toHtml(str);
+		System.out.println("dst is " + dst);
+		
+		
+		
+	}
+	
 	
 	
 	/**
